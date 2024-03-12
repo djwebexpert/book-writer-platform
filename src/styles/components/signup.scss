@@ -1,0 +1,70 @@
+.overlay-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.bg-color {
+  background-color: #17191e;
+}
+
+.center-form {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 75%;
+
+  .field-set {
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+
+    .input_field {
+      border-radius: 5px;
+      border: none;
+      padding: 10px;
+    }
+
+    .input_field:focus {
+      outline: none;
+      border-radius: 5px;
+    }
+  }
+
+  .signup-button {
+    background-color: #07a5a8;
+    color: white;
+    width: 259px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  background-color: #265073;
+
+  .navbar-profile {
+    margin: 4px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .pop-up {
+    width: 200px;
+    position: absolute;
+    top: 107px;
+    right: -87px;
+    border-radius: 5px;
+  }
+}

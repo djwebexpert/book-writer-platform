@@ -1,0 +1,231 @@
+.primary-bg {
+  background-color: #265073;
+}
+
+.scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.secondary-bg {
+  background-color: #c68e25;
+}
+
+.font-size {
+  font-size: 17px;
+}
+
+.sign-up,
+.login {
+  height: 100vh;
+}
+
+.add-book-section {
+  background-color: whitesmoke;
+
+  .new-book {
+    background-color: #265073;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.custom-card {
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-top: 5px solid #c68e25;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+
+
+  .book-title {
+    position: relative;
+
+    h6 {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-icons {
+      background-color: #ffffff;
+      position: absolute;
+      top: 8px;
+      right: 0px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+
+      svg {
+        padding: 8px;
+      }
+    }
+  }
+
+  .card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    min-height: 40px;
+  }
+
+  .card-description-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    &::after {
+      content: "...";
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+
+  .card-description,
+  .card-description-ellipsis {
+    color: #858383;
+    font-size: 18px;
+    font-weight: 400;
+    min-height: 50px;
+    word-break: break-all;
+    max-height: 50px;
+    overflow: hidden;
+  }
+
+  .book-price {
+    color: #858383;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .author-shortname {
+    height: 25px;
+    width: 25px;
+    background-color: #7d7d7dd6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    margin-right: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .book-title {
+
+      .card-icons {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.collaborators-card {
+  background-color: #9bbec8;
+}
+
+.collaborators-button {
+  background-color: #265073;
+}
+
+.card-primary-button,
+.preview-button,
+.collaborators-button {
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.card-primary-button {
+  background-color: #8963fd;
+}
+
+.preview-button {
+  background-color: #265073;
+}
+
+.close-button {
+  background-color: gray;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.nested-section {
+  background-color: #e9e9e9b0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.edit-icon {
+  background-color: #c68e25;
+}
+
+.collaborators-table thead tr th {
+  background-color: #959595;
+  color: white;
+}
+
+// scrollbar design
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b1b1b1;
+  border-radius: 20px;
+  border: 3px solid #b1b1b1;
+}
+
+.dropdown-icon {
+  &.dropdown-toggle {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+
+    &:after {
+      display: none;
+    }
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:focus-within {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.dropdown-menu-box {
+  &.dropdown-menu {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    border: none;
+    min-width: 180px;
+  }
+}
+
+.btn-min-width{
+  min-width: 80px;
+}
